@@ -26,12 +26,11 @@ class AuthController extends Controller
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => Hash::make($request->password),
+            'password' => bcrypt($request->password),
         ]);
 
-        $token = $user->createToken('YourAppName')->accessToken;
 
-        return response()->json(['token' => $token], 201);
+        return response()->json(['user' => $user], 201);
     }
 
     // Login a user and get a token
@@ -42,17 +41,20 @@ class AuthController extends Controller
             'password' => 'required|string',
         ]);
 
-        if ($validator->fails()) {
-            return response()->json(['errors' => $validator->errors()], 422);
+        // user object
+        $user = User::where('email', $request->email)->first();
+
+        if(!empty($user)) {
+
+            if (Hash::check($request->password, $user->password)) {
+
+                $token = $user->createToken('YourAppName')->accessToken;
+                return response()->json(['token' => $token], 200);
+            } else {
+                return response()->json(['error' => 'Unauthorised'], 401);
+            }
+        } else {
+            return response()->json(['error' => 'User not found'], 404);
         }
-
-        if (auth()->attempt(['email' => $request->email, 'password' => $request->password])) {
-            $user = auth()->user();
-            $token = $user->createToken('YourAppName')->accessToken;
-
-            return response()->json(['token' => $token], 200);
-        }
-
-        return response()->json(['error' => 'Unauthorized'], 401);
     }
 }
