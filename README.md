@@ -55,6 +55,9 @@ DB_PASSWORD=your_database_password
    ```
 Your application will be accessible at http://localhost:8000.
 
+Please check attached Insomnia_2025-01-12.yaml file for api refernce
+in project root directory and also index.html in public folder of project
+for auto generated api documentation 
 
 
 
