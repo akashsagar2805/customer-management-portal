@@ -1,0 +1,280 @@
+_type: export
+__export_format: 4
+__export_date: 2025-01-12T12:02:08.177Z
+__export_source: insomnia.desktop.app:v10.3.0
+resources:
+  - _id: req_d6ae66965159419c9f689fe815404391
+    parentId: wrk_80ecaffcae9e43a5b70272a3453bdb10
+    modified: 1736683299584
+    created: 1736683255159
+    url: "{{ _.base_url }}api/customers/2"
+    name: Delete customer
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication:
+      type: bearer
+      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZGYzNDUzZi1lNjMzLTQ4MDMtODcyZi0zNGUyODJmMzJiYjAiLCJqdGkiOiIwMjQxNTBiZGJjZTlhNjU4YWNlZTI3ZTJlNGI2M2ZmNzEzZTFiOWQzOTk1Y2EwNWFiNGNkOTY5OTk0NzQ0M2ZlODE4NDliNWVlYjMyNWEwZiIsImlhdCI6MTczNjY4MjUyMS4zODE5MzMsIm5iZiI6MTczNjY4MjUyMS4zODE5MzQsImV4cCI6MTc2ODIxODUyMS4zNzc0ODIsInN1YiI6IjEwIiwic2NvcGVzIjpbXX0.PhFnjkK_zO-EdySqIATTRnff1Mnk4iW10XldDaVYoZgtZ4X8cC44RQg1JufZCZL0ScM-Xmcy4QqT8b0q_wJgI4tc2b-FKrnklt3yknb4iqBPTVuDZa9811SLmXApyifkz8lyCn4LEK619-bibIZIe-xUUpoJu2JDCjxHm6wSnZHZ99Ns-BWPegTHcpdgAzVa4IA9K-69BONjdpToEOUzyO7KSuofZDAKNmcO49T8B3le3AjCJZ_rjZa7AMmNkLVv-JqvKpyCLcuHONLoDh120P1LUbjFWXYdKf0FTtlBqdoi5Uw8wmuJNRqJaqgzp_bpgUfhqRuyw-soLMu5PBiHMm2P8bRrva9kAQqr2WR6DN30grf1Y804_uOVdxEPjqLpMR6KhJ7_OtuWD2XRzxn4m50kV0nWTcHqG6OXSBhbMxMqnjRosQXR92kO9_Z6vmkIHUYZvazsk8mzAwzvQVymE4jT3ujZN-yzmS6ntaZRnjkPmenipL4uZAfm3ILmS3Lo3KUXBeoiwTs_7kEfeb-UNxpSx0sNLNR5xQQOLgk8E_x1n14iNwKbTBlL2XBgMJ-N3x8KRZyt7qpPT3K2fVuXw7bJ4-V-_IAOmMHxybV19mhQaPuDLpn0MJetx42KFSR3lYlD2sewPOnxCOl-PgfcL1I71VDEiQ4ALFGv9pR3Uno
+    metaSortKey: -1736683255159
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_80ecaffcae9e43a5b70272a3453bdb10
+    parentId: null
+    modified: 1736674019945
+    created: 1736674019945
+    name: My Collection
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_cb98114cb39c4d6ca43c3be91a25dd30
+    parentId: wrk_80ecaffcae9e43a5b70272a3453bdb10
+    modified: 1736683250588
+    created: 1736683210501
+    url: "{{ _.base_url }}api/customers/4"
+    name: Get customer
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication:
+      type: bearer
+      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZGYzNDUzZi1lNjMzLTQ4MDMtODcyZi0zNGUyODJmMzJiYjAiLCJqdGkiOiIwMjQxNTBiZGJjZTlhNjU4YWNlZTI3ZTJlNGI2M2ZmNzEzZTFiOWQzOTk1Y2EwNWFiNGNkOTY5OTk0NzQ0M2ZlODE4NDliNWVlYjMyNWEwZiIsImlhdCI6MTczNjY4MjUyMS4zODE5MzMsIm5iZiI6MTczNjY4MjUyMS4zODE5MzQsImV4cCI6MTc2ODIxODUyMS4zNzc0ODIsInN1YiI6IjEwIiwic2NvcGVzIjpbXX0.PhFnjkK_zO-EdySqIATTRnff1Mnk4iW10XldDaVYoZgtZ4X8cC44RQg1JufZCZL0ScM-Xmcy4QqT8b0q_wJgI4tc2b-FKrnklt3yknb4iqBPTVuDZa9811SLmXApyifkz8lyCn4LEK619-bibIZIe-xUUpoJu2JDCjxHm6wSnZHZ99Ns-BWPegTHcpdgAzVa4IA9K-69BONjdpToEOUzyO7KSuofZDAKNmcO49T8B3le3AjCJZ_rjZa7AMmNkLVv-JqvKpyCLcuHONLoDh120P1LUbjFWXYdKf0FTtlBqdoi5Uw8wmuJNRqJaqgzp_bpgUfhqRuyw-soLMu5PBiHMm2P8bRrva9kAQqr2WR6DN30grf1Y804_uOVdxEPjqLpMR6KhJ7_OtuWD2XRzxn4m50kV0nWTcHqG6OXSBhbMxMqnjRosQXR92kO9_Z6vmkIHUYZvazsk8mzAwzvQVymE4jT3ujZN-yzmS6ntaZRnjkPmenipL4uZAfm3ILmS3Lo3KUXBeoiwTs_7kEfeb-UNxpSx0sNLNR5xQQOLgk8E_x1n14iNwKbTBlL2XBgMJ-N3x8KRZyt7qpPT3K2fVuXw7bJ4-V-_IAOmMHxybV19mhQaPuDLpn0MJetx42KFSR3lYlD2sewPOnxCOl-PgfcL1I71VDEiQ4ALFGv9pR3Uno
+    metaSortKey: -1736683210501
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_84a5b96b83654ebcb7e52284b2ca77de
+    parentId: wrk_80ecaffcae9e43a5b70272a3453bdb10
+    modified: 1736683207774
+    created: 1736683062991
+    url: "{{ _.base_url }}api/customers/4"
+    name: Update customer
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "first_name": "akash",
+          "last_name": "sasas",
+          "age": 30,
+          "dob": "1993-05-15",
+          "email": "john.doe@examsple.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication:
+      type: bearer
+      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZGYzNDUzZi1lNjMzLTQ4MDMtODcyZi0zNGUyODJmMzJiYjAiLCJqdGkiOiIwMjQxNTBiZGJjZTlhNjU4YWNlZTI3ZTJlNGI2M2ZmNzEzZTFiOWQzOTk1Y2EwNWFiNGNkOTY5OTk0NzQ0M2ZlODE4NDliNWVlYjMyNWEwZiIsImlhdCI6MTczNjY4MjUyMS4zODE5MzMsIm5iZiI6MTczNjY4MjUyMS4zODE5MzQsImV4cCI6MTc2ODIxODUyMS4zNzc0ODIsInN1YiI6IjEwIiwic2NvcGVzIjpbXX0.PhFnjkK_zO-EdySqIATTRnff1Mnk4iW10XldDaVYoZgtZ4X8cC44RQg1JufZCZL0ScM-Xmcy4QqT8b0q_wJgI4tc2b-FKrnklt3yknb4iqBPTVuDZa9811SLmXApyifkz8lyCn4LEK619-bibIZIe-xUUpoJu2JDCjxHm6wSnZHZ99Ns-BWPegTHcpdgAzVa4IA9K-69BONjdpToEOUzyO7KSuofZDAKNmcO49T8B3le3AjCJZ_rjZa7AMmNkLVv-JqvKpyCLcuHONLoDh120P1LUbjFWXYdKf0FTtlBqdoi5Uw8wmuJNRqJaqgzp_bpgUfhqRuyw-soLMu5PBiHMm2P8bRrva9kAQqr2WR6DN30grf1Y804_uOVdxEPjqLpMR6KhJ7_OtuWD2XRzxn4m50kV0nWTcHqG6OXSBhbMxMqnjRosQXR92kO9_Z6vmkIHUYZvazsk8mzAwzvQVymE4jT3ujZN-yzmS6ntaZRnjkPmenipL4uZAfm3ILmS3Lo3KUXBeoiwTs_7kEfeb-UNxpSx0sNLNR5xQQOLgk8E_x1n14iNwKbTBlL2XBgMJ-N3x8KRZyt7qpPT3K2fVuXw7bJ4-V-_IAOmMHxybV19mhQaPuDLpn0MJetx42KFSR3lYlD2sewPOnxCOl-PgfcL1I71VDEiQ4ALFGv9pR3Uno
+    metaSortKey: -1736683062991
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f0e13e5f06784a8eaff10fab4bab8234
+    parentId: wrk_80ecaffcae9e43a5b70272a3453bdb10
+    modified: 1736683059671
+    created: 1736682535289
+    url: "{{ _.base_url }}api/customers"
+    name: Create customer
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "first_name": "John",
+          "last_name": "Doe",
+          "age": 30,
+          "dob": "1993-05-15",
+          "email": "john.doe@examsple.com"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication:
+      type: bearer
+      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZGYzNDUzZi1lNjMzLTQ4MDMtODcyZi0zNGUyODJmMzJiYjAiLCJqdGkiOiIwMjQxNTBiZGJjZTlhNjU4YWNlZTI3ZTJlNGI2M2ZmNzEzZTFiOWQzOTk1Y2EwNWFiNGNkOTY5OTk0NzQ0M2ZlODE4NDliNWVlYjMyNWEwZiIsImlhdCI6MTczNjY4MjUyMS4zODE5MzMsIm5iZiI6MTczNjY4MjUyMS4zODE5MzQsImV4cCI6MTc2ODIxODUyMS4zNzc0ODIsInN1YiI6IjEwIiwic2NvcGVzIjpbXX0.PhFnjkK_zO-EdySqIATTRnff1Mnk4iW10XldDaVYoZgtZ4X8cC44RQg1JufZCZL0ScM-Xmcy4QqT8b0q_wJgI4tc2b-FKrnklt3yknb4iqBPTVuDZa9811SLmXApyifkz8lyCn4LEK619-bibIZIe-xUUpoJu2JDCjxHm6wSnZHZ99Ns-BWPegTHcpdgAzVa4IA9K-69BONjdpToEOUzyO7KSuofZDAKNmcO49T8B3le3AjCJZ_rjZa7AMmNkLVv-JqvKpyCLcuHONLoDh120P1LUbjFWXYdKf0FTtlBqdoi5Uw8wmuJNRqJaqgzp_bpgUfhqRuyw-soLMu5PBiHMm2P8bRrva9kAQqr2WR6DN30grf1Y804_uOVdxEPjqLpMR6KhJ7_OtuWD2XRzxn4m50kV0nWTcHqG6OXSBhbMxMqnjRosQXR92kO9_Z6vmkIHUYZvazsk8mzAwzvQVymE4jT3ujZN-yzmS6ntaZRnjkPmenipL4uZAfm3ILmS3Lo3KUXBeoiwTs_7kEfeb-UNxpSx0sNLNR5xQQOLgk8E_x1n14iNwKbTBlL2XBgMJ-N3x8KRZyt7qpPT3K2fVuXw7bJ4-V-_IAOmMHxybV19mhQaPuDLpn0MJetx42KFSR3lYlD2sewPOnxCOl-PgfcL1I71VDEiQ4ALFGv9pR3Uno
+    metaSortKey: -1736682535289
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ef97e76719fc44dbb5ae3cf5dc3855e5
+    parentId: wrk_80ecaffcae9e43a5b70272a3453bdb10
+    modified: 1736683029997
+    created: 1736682257147
+    url: "{{ _.base_url }}api/customers"
+    name: Get all customers
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication:
+      type: bearer
+      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZGYzNDUzZi1lNjMzLTQ4MDMtODcyZi0zNGUyODJmMzJiYjAiLCJqdGkiOiI1NzczNmUyNzI3YTJhMzA0YzZhNGMwMWMyOGYyYzYxODZkYzRhZGRjNGE0YjRkOTAzNzNlYjRkZGQ0Y2Q4NTlhNWRlYzJjZTUwZWI1NDc1NSIsImlhdCI6MTczNjY4MjI0Ni43MTU3ODgsIm5iZiI6MTczNjY4MjI0Ni43MTU3ODksImV4cCI6MTc2ODIxODI0Ni43MTE5MSwic3ViIjoiNyIsInNjb3BlcyI6W119.VjVUQLsCmvG5W18B0h-y5bXKyEiy2Ynvol1WxIjcwgX2snz3g3bZv4Aojd0bzHHZiCKkpcnKjO9FS_mptn6w7ed-ALivc7fgl3aytiq846zGvLzfMpoSOZGi3maHM_hJ13sm66tTm5LvGhqOJ-Dc-xp3xHtS4GcsIfxeiCfUTyKkT-WwHWF9952ygqoIJmUO-l6lPmRYcZ22v7kfwt3wlQvYN5jRObhJWVynWAFaswVTKXSvpHnVYkBMDXLdG2uvrhevgzEBqCGj56OU38o9qHYu8437YtrkVpxmlEK9RpQsg3X5zVr-b-sEJSkSbNyOsOvUk3x4qP9d0NYbDRjM6Of2vKzl2KAJtedJLeuTQpbBYTJmSTSOZrbdh342CBUE2VU-0uQwXWxiQ7CLuQK1jYwu_vtFe5-Lsv6MFO3jPA2P_h5CYxrx7bbPoasDzpEn2KTRrUz14zILyUU3-4lJjxOppkZ1u6X1Przci3bWSfvfxZ2284qBHlG0eHYsGPXnftrVYn6sZBM9ssvxel2Z0oVEMIg4539KnOTTwfOwhmObC7OOehLQZbtNNnbw_0uJE38UcEUm9c8UXHXxyd3TuFO_bt-10LSlL0PQCUkSeRStivrvrZgENeORogTDIqI5QjfyM7lZj9OPAbCpNbv0b_I0k1yOy3zNYmXj3-Oelng
+    metaSortKey: -1736682257147
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_efdd135d680f4eafb03b84a89cb4ead3
+    parentId: wrk_80ecaffcae9e43a5b70272a3453bdb10
+    modified: 1736683000370
+    created: 1736678606437
+    url: "{{ _.base_url }}api/login"
+    name: Login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "akash1d234@test.com",
+        	"password": "password123"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1736678606437
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1aafd746785e40be83d64902fba410f1
+    parentId: wrk_80ecaffcae9e43a5b70272a3453bdb10
+    modified: 1736682980632
+    created: 1736674028154
+    url: "{{ _.base_url }}api/register"
+    name: Register
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+            "name": "akash sagar",
+            "email": "akash1d234@test.com",
+            "password": "password123",
+            "password_confirmation": "password123"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1736674028154
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_5ef9c07a450082ddfa6ce08ee854036fad27a788
+    parentId: wrk_80ecaffcae9e43a5b70272a3453bdb10
+    modified: 1736682927633
+    created: 1736674019947
+    name: Base Environment
+    data:
+      base_url: http://customer-database-management.test/
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1736674019947
+    environmentType: kv
+    kvPairData:
+      - id: envPair_22d80c5a66564ee08c6d6c6f051516a6
+        name: base_url
+        value: http://customer-database-management.test/
+        type: str
+        enabled: true
+    _type: environment
+  - _id: jar_5ef9c07a450082ddfa6ce08ee854036fad27a788
+    parentId: wrk_80ecaffcae9e43a5b70272a3453bdb10
+    modified: 1736683033530
+    created: 1736674019948
+    name: Default Jar
+    cookies:
+      - key: XSRF-TOKEN
+        value: eyJpdiI6Ik9vL2IxMHRVYWZNcERLMHo4Q3RHaGc9PSIsInZhbHVlIjoiMzZWV1NHaXZwVTQxUnZ4Rk83elZlWllQOFVIMkVxWUFhSUZaakJjeUc3WGNYQ1Uzdml3TldvMGl4cEpCNmE3TjZ1Zi81UFFDZzVtNTRPdXc3WVRHVkM5S2hOTXlZV3ZHd29JZzVaT1JxQnpTYW16NzQ5aCtiR3R1TU5jUkR0eTEiLCJtYWMiOiIxZjZhNTA2Yzc5ZDMyNTEwMjQzZmRhYTNmMGM0ZGViZGZjZDI5OWZjZDJhMWViMTM2MDljZjA5OWI2YjJiZjcwIiwidGFnIjoiIn0%3D
+        expires: 2025-01-12T13:57:13.000Z
+        maxAge: 7200
+        domain: customer-database-management.test
+        path: /
+        hostOnly: true
+        creation: 2025-01-12T09:50:40.352Z
+        lastAccessed: 2025-01-12T11:57:13.530Z
+        sameSite: lax
+        id: 5dc57112-d88b-4360-bf58-2f7aa7385853
+      - key: laravel_session
+        value: eyJpdiI6Ii9TTWxLQXlONFFvc2NianNqQUdOS0E9PSIsInZhbHVlIjoibE1PdUZYUVpBenhQNHYxQUxFeERxSTV1NU5OdVgrVmZzV28ySm5LTExuU2ltdlA4NHRVNFdscDFSZGQ4czBLZGVOTU9tbEhPWEE4cStWZVVXdXNWT2VDUkR3ZkhKOVdOb21JSUFKa0JRMTVFSXV0NWZZSUd3OGtNTmh3MlhkUkoiLCJtYWMiOiIzZmQxMzA5YTEwOTI2OTlhODlmOTE4MzEwZDI4NmFhMjkyNzBhMWYxYmE2Y2NiYzFmODk3YzVkNDc2NDlmOGQxIiwidGFnIjoiIn0%3D
+        expires: 2025-01-12T13:57:13.000Z
+        maxAge: 7200
+        domain: customer-database-management.test
+        path: /
+        httpOnly: true
+        hostOnly: true
+        creation: 2025-01-12T09:50:40.352Z
+        lastAccessed: 2025-01-12T11:57:13.530Z
+        sameSite: lax
+        id: a94928c4-8b49-45f2-a326-829b6e214fbf
+    _type: cookie_jar
