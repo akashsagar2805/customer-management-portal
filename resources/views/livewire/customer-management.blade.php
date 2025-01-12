@@ -14,14 +14,29 @@
 
     <form wire:submit.prevent="{{ $isEditMode ? 'update' : 'store' }}" class="space-y-4">
         <div class="flex space-x-4">
+            <div class="w-full">
             <input type="text" wire:model="first_name" placeholder="First Name" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-300">
+            @error('first_name') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <div class="w-full">
             <input type="text" wire:model="last_name" placeholder="Last Name" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-300">
+            @error('last_name') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
         </div>
         <div class="flex space-x-4">
+            <div class="w-full">
             <input type="number" wire:model="age" placeholder="Age" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-300">
+            @error('age') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
+            <div class="w-full">
             <input type="date" wire:model="dob" placeholder="Date of Birth" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-300">
+            @error('dob') <span class="text-red-500">{{ $message }}</span> @enderror
+            </div>
         </div>
-        <input type="email" wire:model="email" placeholder="Email" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-300">
+        <div class="w-full">
+            <input type="email" wire:model="email" placeholder="Email" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-300">
+            @error('email') <span class="text-red-500">{{ $message }}</span> @enderror
+        </div>
 
         <button type="submit" class="py-2 px-6 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-200">
             {{ $isEditMode ? 'Update' : 'Save' }}

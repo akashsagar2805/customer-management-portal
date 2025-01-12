@@ -12,6 +12,13 @@ class CustomerManagement extends Component
 
     public $first_name, $last_name, $age, $dob, $email, $customer_id;
     public $isEditMode = false;
+    protected $rules = [
+        'first_name' => 'required',
+        'last_name' => 'required',
+        'age' => 'required|integer',
+        'dob' => 'required|date',
+        'email' => 'required|email|unique:customers',
+    ];
 
     public function render()
     {
@@ -22,13 +29,7 @@ class CustomerManagement extends Component
 
     public function store()
     {
-        $this->validate([
-            'first_name' => 'required',
-            'last_name' => 'required',
-            'age' => 'required|integer',
-            'dob' => 'required|date',
-            'email' => 'required|email|unique:customers',
-        ]);
+        $this->validate();
 
         Customer::create([
             'first_name' => $this->first_name,
@@ -57,13 +58,7 @@ class CustomerManagement extends Component
 
     public function update()
     {
-        $this->validate([
-            'first_name' => 'required',
-            'last_name' => 'required',
-            'age' => 'required|integer',
-            'dob' => 'required|date',
-            'email' => 'required|email|unique:customers,email,' . $this->customer_id,
-        ]);
+        $this->validate();
 
         $customer = Customer::findOrFail($this->customer_id);
         $customer->update([
