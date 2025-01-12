@@ -58,6 +58,7 @@ class CustomerManagement extends Component
 
     public function update()
     {
+        $this->rules['email'] = 'required|email|unique:customers,email,' . $this->customer_id;
         $this->validate();
 
         $customer = Customer::findOrFail($this->customer_id);
